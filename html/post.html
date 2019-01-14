@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="../css/post.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!--top______________________________________________________________________________________________-->
+	<div class="top">
+
+		<!--logo____________________________________________________________________________________________________________________________________________-->
+		<div class="logo"></div>
+
+		<!--navigation______________________________________________________________________________________________________________________________________-->
+		<div class="navigation">
+			<div class="navbut">
+				<span class="navbutval"><p><a href="../Index.html">Home</a></p></span>
+			</div>
+			<div class="navbut">
+				<span class="navbutval"><p>Questions</p></span>
+				<div class="con">
+				    <a href="user.html">Question Categories</a>
+				    <a href="user.html">Custom Categorey</a>
+			    </div>
+			</div>
+			<div class="navbut">
+				<span class="navbutval"><p>Login</p></span>
+				<div class="con">
+				    <a href="login.html">Login</a>
+				    <a href="signup.html">Signup</a>
+			    </div>
+			</div>
+			<div class="navbut">
+				<span class="navbutval"><p><a href="#" target="">Contact Us</a></p></span>
+			</div>
+        </div>
+
+    <!--main-->
+	<div class="main">
+		<div class="ans" style="margin-top:20px;border:none;margin-bottom:30px;">
+			<p class="name1" style="color:rgba(244,116,100,1);font-size:25px;">How does JavaScript .prototype work?</p>
+			<p>I'm not that into dynamic programming languages, but I've written my fair share of JavaScript code. I never really got my head around this prototype-based programming, does any one know how this works?
+      </p><pre style="color:red;">
+				var obj = new Object(); // not a functional object
+                obj.prototype.test = function() { alert('Hello?'); }; // this is wrong!
+
+                 function MyObject() {} // a first class functional object
+                   MyObject.prototype.test = function() { alert('OK'); } // OK
+			</pre>
+			<p>I remember a lot discussion I had with people a while back (I'm not exactly sure what I'm doing) but as I understand it, there's no concept of a class. It's just an object, and instances of those objects are clones of the original, right?
+
+But what is the exact purpose of this .prototype property in JavaScript? How does it relate to instantiating objects?
+			</p>
+		</div>
+		<div style="background-color:rgba(243,243,243,1);">
+		<span style="color:rgba(244,116,100,1);font-size:25px;margin-left:45px;float:left;margin:top:30px;">
+			Answers<br/></span>
+			<hr style="width:94%;float:left;margin-left:30px;clear:left;border:1px solid rgba(243,116,100,1);text-align:center;">
+		<div class="ans" style="clear:both;">
+			<p class="name1">Answer 1</p>
+			<p>
+
+
+Every JavaScript object has an internal property called [[Prototype]]. If you look up a property via obj.propName or obj['propName'] and the object does not have such a property - which can be checked via obj.hasOwnProperty('propName') - the runtime looks up the property in the object referenced by [[Prototype]] instead. If the prototype-object also doesn't have such a property, its prototype is checked in turn, thus walking the original object's prototype-chain until a match is found or its end is reached.
+
+Some JavaScript implementations allow direct access to the [[Prototype]] property, eg via a non-standard property named __proto__. In general, it's only possible to set an object's prototype during object creation: If you create a new object via new Func(), the object's [[Prototype]] property will be set to the object referenced by Func.prototype.
+
+This allows to simulate classes in JavaScript, although JavaScript's inheritance system is - as we have seen - prototypical, and not class-based:
+
+Just think of constructor functions as classes and the properties of the prototype (ie of the object referenced by the constructor function's prototype property) as shared members, ie members which are the same for each instance. In class-based systems, methods are implemented the same way for each instance, so methods are normally added to the prototype, whereas an object's fields are instance-specific and therefore added to the object itself during construction.
+
+			</p>
+		</div>
+		<div class="ans">
+			<p class="name1">Answer 2</p>
+			<p>
+				In a language implementing classical inheritance like Java, C# or C++ you start by creating a class--a blueprint for your objects--and then you can create new objects from that class or you can extend the class, defining a new class that augments the original class.
+
+In JavaScript you first create an object (there is no concept of class), then you can augment your own object or create new objects from it. It's not difficult, but a little foreign and hard to metabolize for somebody used to the classical way.
+			</p>
+		</div>
+		<div class="ans">
+			<p class="name1">Answer 3</p>
+			<p>
+				To take the first step we have to figure out, how JavaScript functions actually work , as a class like function using this keyword in it or just as a regular function with its arguments, what it does and what it returns.
+
+Let's say we want to create a Person object model. but in this step I'm gonna be trying to do the same exact thing without using prototype and new keyword.
+
+So in this step functions, objects and this keyword, are all we have.
+
+The first question would be how this keyword could be useful without using new keyword.
+			</p>
+		</div>
+	</div>
+	<span style="color:rgba(244,116,100,1);font-size:25px;margin-left:45px;float:left;margin:top:30px;">
+		Reply<br/></span>
+		<hr style="width:94%;float:left;margin-left:30px;clear:left;border:1px solid rgba(243,116,100,1);text-align:center;">
+		<div class="rep" style="clear:both;;"><form method="post" action="../Index.html">
+			<input type="text" name="" placeholder="Name" class="box" required="required" style="text-align:center;"></input>
+			<input type="text" name="" placeholder="Email" class="box" required="required" style="text-align:center;"></input>
+			<input type="text" name="" placeholder="Website" class="box" required="required" style="text-align:center;"></input>
+			<input type="text" name="" placeholder="Title" class="box1" style="text-align:center;"></input>
+			<textarea placeholder="enter something!!" required="required" style="text-align:center;"></textarea>
+			<input type="submit" value="repbut" class="repbut" label="Submit"></input></form>
+		</div>
+	</div>
+
+    <!--counters-->
+		<div class="counters">
+			<div class="count">
+				<div class="count1"><p>Questions  12</p></div>
+				<div class="count1"><p>Answers  9</p></div>
+				<div class="count1"><p>Best Answers  6</p></div>
+				<div class="count1"><p>Users  3</p></div>
+				<div class="count2"><p>Stats-</p></div>
+			</div>
+		</div>
+
+	<!--Contact Info-->
+	<div class="contactinfo" name="x">
+		<div class="conlef">
+			<p style="color:rgba(255,255,255,1);">
+				About Query Me :-
+			</p>
+		</div>
+		<div class="conrig">
+			<p style="font-size:16px;text-align:left;">
+				Online discussion platform management system provides the  platform for the students of the University to get solutions to their problems related to programming, it provides a medium where all  the students  who want to code can come together to help or get help  from other pro-grammers.
+			</p><p style="margin-top:15px;color:rgba(243,116,100,1);">Thanks for visiting our website.</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/structure.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+		function f1()
+		{
+			document.getElementsByClassName("ar1")[0].style.display="block";
+			document.getElementsByClassName("ar2")[0].style.display="none";
+			document.getElementsByClassName("ar3")[0].style.display="none";
+			document.getElementsByClassName("ar4")[0].style.display="none";
+		}
+		function f2()
+		{
+			document.getElementsByClassName("ar1")[0].style.display="none";
+			document.getElementsByClassName("ar2")[0].style.display="block";
+			document.getElementsByClassName("ar3")[0].style.display="none";
+			document.getElementsByClassName("ar4")[0].style.display="none";
+		}
+		function f3()
+		{
+			document.getElementsByClassName("ar1")[0].style.display="none";
+			document.getElementsByClassName("ar2")[0].style.display="none";
+			document.getElementsByClassName("ar3")[0].style.display="block";
+			document.getElementsByClassName("ar4")[0].style.display="none";
+		}
+		function f4()
+		{
+			document.getElementsByClassName("ar1")[0].style.display="none";
+			document.getElementsByClassName("ar2")[0].style.display="none";
+			document.getElementsByClassName("ar3")[0].style.display="none";
+			document.getElementsByClassName("ar4")[0].style.display="block"
+		}
+		</script>
+</head>
+<body>
+	<!--top______________________________________________________________________________________________-->
+	<div class="top">
+
+		<!--logo____________________________________________________________________________________________________________________________________________-->
+		<div class="logo"></div>
+
+		<!--navigation______________________________________________________________________________________________________________________________________-->
+		<div class="navigation">
+			<div class="navbut">
+				<span class="navbutval"><p><a href="#">Home</a></p></span>
+			</div>
+			<div class="navbut">
+				<span class="navbutval"><p>Questions</p></span>
+				<div class="con">
+				    <a href="html/user.html">Question Categories</a>
+				    <a href="html/user.html">Custom Categorey</a>
+			    </div>
+			</div>
+			<div class="navbut">
+				<span class="navbutval"><p>Login</p></span>
+				<div class="con">
+				    <a href="html/login.html">Login</a>
+				    <a href="html/signup.html">Signup</a>
+			    </div>
+			</div>
+			<div class="navbut">
+				<span class="navbutval"><p><a href="#" target="">Contact Us</a></p></span>
+			</div>
+        </div>
+
+		<!--addpost______________________________________________________________________________________________________________________________________-->
+		<div class="addpost">
+			<div class="addpostleft">
+				<div class="det">
+					<h1>Welcome to Query Me</h1>
+					<br/>
+					<p>Here you can find any solution regarding to your any programming related problems </p><br/>
+					<p>Learn and share you problem with our community</p>
+				</div>
+			</div>
+			<div class="addpostright">
+				<span class="addpostbut">
+					<p><a href="html/addpost.html">Ask Me</a></p>
+				</span>
+			</div>
+		</div>
+
+	</div>
+
+	<!--main______________________________________________________________________________________________________________________________________-->
+	<div class="main">
+		<div class="tabline">
+			<span class="tab1" style="cursor:pointer;" onclick="f1()"><p>Recent Questions</p></span>
+			<span class="tab1" style="cursor:pointer;" onclick="f2()"><p>Recent Answers</p></span>
+			<span class="tab1" style="cursor:pointer;" onclick="f3()"><p>No Answers</p></span>
+			<span class="tab1" style="cursor:pointer;" onclick="f4()"><p>Most Responses</p></span>
+		</div>
+		<div class="ar1" style="display:block;">
+		<div class="que">
+			<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">2345<br/>Likes</div></div>
+			<div class="quemain">
+				<div class="quepart1">
+					<div class="quetxt"><a href="html/post.html">How do I make the most out of a MS in Business Analytics?</a></div>
+				</div>
+				<div class="quepart2">
+					<span class="quebut"><a href="#">Like</a></span>
+					<span class="quebut"><a href="html/post.html">Reply</a></span>
+					<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+					<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+					August 2017</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="que">
+			<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">8<br/>Likes</div></div>
+			<div class="quemain">
+				<div class="quepart1">
+					<div class="quetxt"><a href="html/post.html">How much do web developers earn? What is their salary?</a></div>
+				</div>
+				<div class="quepart2">
+					<span class="quebut"><a href="html/post.html">Like</a></span>
+					<span class="quebut"><a href="html/post.html">Reply</a></span>
+					<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+					<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+					August 2017</span>
+				</div>
+			</div>
+		</div>
+		<div class="que">
+			<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">9<br/>Likes</div></div>
+			<div class="quemain">
+				<div class="quepart1">
+					<div class="quetxt"><a href="html/post.html">Do I need to have a undergrad percentage of 70% to do my masters in Germany?</a></div>
+				</div>
+				<div class="quepart2">
+					<span class="quebut"><a href="html/post.html">Like</a></span>
+					<span class="quebut"><a href="html/post.html">Reply</a></span>
+					<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+					<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+					August 2017</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ar2" style="display:none;">
+	<div class="que">
+		<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">1472<br/>Likes</div></div>
+		<div class="quemain">
+			<div class="quepart1">
+				<div class="quetxt"><a href="html/post.html">How do I make the most out of a MS in Business Analytics?</a></div>
+			</div>
+			<div class="quepart2">
+				<span class="quebut"><a href="#">Like</a></span>
+				<span class="quebut"><a href="html/post.html">Reply</a></span>
+				<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+				<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+				August 2017</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="que">
+		<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">1777<br/>Likes</div></div>
+		<div class="quemain">
+			<div class="quepart1">
+				<div class="quetxt"><a href="html/post.html">Do I need to have a undergrad percentage of 70% to do my masters in Germany?</a></div>
+			</div>
+			<div class="quepart2">
+				<span class="quebut"><a href="html/post.html">Like</a></span>
+				<span class="quebut"><a href="html/post.html">Reply</a></span>
+				<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+				<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+				August 2017</span>
+			</div>
+		</div>
+	</div>
+	<div class="que">
+		<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">1346<br/>Likes</div></div>
+		<div class="quemain">
+			<div class="quepart1">
+				<div class="quetxt"><a href="html/post.html">How much do web developers earn? What is their salary?</a></div>
+			</div>
+			<div class="quepart2">
+				<span class="quebut"><a href="html/post.html">Like</a></span>
+				<span class="quebut"><a href="html/post.html">Reply</a></span>
+				<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+				<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+				August 2017</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ar3" style="display:none;">
+<div class="que">
+	<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">156<br/>Likes</div></div>
+	<div class="quemain">
+		<div class="quepart1">
+			<div class="quetxt"><a href="html/post.html">How do I make the most out of a MS in Business Analytics?</a></div>
+		</div>
+		<div class="quepart2">
+			<span class="quebut"><a href="#">Like</a></span>
+			<span class="quebut"><a href="html/post.html">Reply</a></span>
+			<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+			<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+			August 2017</span>
+		</div>
+	</div>
+</div>
+
+<div class="que">
+	<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">133<br/>Likes</div></div>
+	<div class="quemain">
+		<div class="quepart1">
+			<div class="quetxt"><a href="html/post.html">Do I need to have a undergrad percentage of 70% to do my masters in Germany?</a></div>
+		</div>
+		<div class="quepart2">
+			<span class="quebut"><a href="html/post.html">Like</a></span>
+			<span class="quebut"><a href="html/post.html">Reply</a></span>
+			<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+			<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+			August 2017</span>
+		</div>
+	</div>
+</div>
+<div class="que">
+	<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">1345<br/>Likes</div></div>
+	<div class="quemain">
+		<div class="quepart1">
+			<div class="quetxt"><a href="html/post.html">How much do web developers earn? What is their salary?</a></div>
+		</div>
+		<div class="quepart2">
+			<span class="quebut"><a href="html/post.html">Like</a></span>
+			<span class="quebut"><a href="html/post.html">Reply</a></span>
+			<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+			<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+			August 2017</span>
+		</div>
+	</div>
+</div>
+</div>
+<div class="ar4" style="display:none;">
+<div class="que">
+	<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">14<br/>Likes</div></div>
+	<div class="quemain">
+		<div class="quepart1">
+			<div class="quetxt"><a href="html/post.html">How do I make the most out of a MS in Business Analytics?</a></div>
+		</div>
+		<div class="quepart2">
+			<span class="quebut"><a href="#">Like</a></span>
+			<span class="quebut"><a href="html/post.html">Reply</a></span>
+			<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+			<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+			August 2017</span>
+		</div>
+	</div>
+</div>
+
+<div class="que">
+	<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">102<br/>Likes</div></div>
+	<div class="quemain">
+		<div class="quepart1">
+			<div class="quetxt"><a href="html/post.html">Do I need to have a undergrad percentage of 70% to do my masters in Germany?</a></div>
+		</div>
+		<div class="quepart2">
+			<span class="quebut"><a href="html/post.html">Like</a></span>
+			<span class="quebut"><a href="html/post.html">Reply</a></span>
+			<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+			<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+			August 2017</span>
+		</div>
+	</div>
+</div>
+<div class="que">
+	<div class="quec"><div style="font-size:25px;text-align:center;margin-top:25px;">12<br/>Likes</div></div>
+	<div class="quemain">
+		<div class="quepart1">
+			<div class="quetxt"><a href="html/post.html">How much do web developers earn? What is their salary?</a></div>
+		</div>
+		<div class="quepart2">
+			<span class="quebut"><a href="html/post.html">Like</a></span>
+			<span class="quebut"><a href="html/post.html">Reply</a></span>
+			<span class="quebut"><a href="html/user.html">Questioned by</a></span>
+			<span style="background-color:none;font-size:16px;color:rgba(244,116,100,1);margin-right:35px;margin-top:20px;float:right;">
+			August 2017</span>
+		</div>
+	</div>
+</div>
+</div>
+	</div>
+
+	<!--counters______________________________________________________________________________________________________________________________________-->
+	<div class="counters">
+		<div class="count">
+			<div class="count1"><p>Questions  12</p></div>
+			<div class="count1"><p>Answers  9</p></div>
+			<div class="count1"><p>Best Answers  6</p></div>
+			<div class="count1"><p>Users  3</p></div>
+			<div class="count2"><p>Stats-</p></div>
+		</div>
+	</div>
+
+	<!--Contact Info______________________________________________________________________________________________________________________________________-->
+	<div class="contactinfo" name="x">
+		<div class="conlef">
+			<p style="color:rgba(255,255,255,1);">
+				About Query Me :-
+			</p>
+		</div>
+		<div class="conrig">
+			<p style="font-size:16px;text-align:left;">
+				Online discussion platform management system provides the  platform for the students of the University to get solutions to their problems related to programming, it provides a medium where all  the students  who want to code can come together to help or get help  from other pro-grammers.
+			</p><p style="margin-top:15px;color:rgba(243,116,100,1);">Thanks for visiting our website.</p>
+		</div>
+	</div>
+
+</body>
+
+</html>

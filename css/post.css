@@ -1,0 +1,19 @@
+/*https://www.template.net/cms-templates/wordpress-templates/question-answer-wp-theme/*/
+body{background-color:rgba(243,243,243,1);}
+.main{width:70%;height:auto;background-color:rgba(243,243,243,1);float:left;clear:both;}
+
+.que{width:100%;height:110px;background-color:rgba(244,116,100,1);clear:both;color:white;}
+.que p{font-size:37px;text-align:center;margin-top:15px;z-index:-1;}
+.ans{width:94%;height:auto;background-color:white;border-bottom:1px solid rgba(0,0,0,0.3);margin-left:30px;
+  padding-bottom:40px;padding-top:20px;}
+.ans p{margin-left:30px;font-size:20px;margin-top:20px;margin-right:30px;}
+.name1{font-size:30px;color:grey;}
+.rep{width:94%;height:auto;background-color:white;margin-bottom:50px;margin-left:30px;padding-bottom:30px;}
+.box{background-color:white;color:red;border:1px solid rgba(0,0,0,0.3);width:30%;margin-left:15px;
+  margin-bottom:20px;height:40px;margin-top:10px;border-radius:3px;}
+.box1{background-color:white;color:red;border:1px solid rgba(0,0,0,0.3);width:94%;margin-left:15px;
+  margin-bottom:20px;height:40px;border-radius:3px;}
+.repbut{width:94%;height:40px;border:1px solid rgba(0,0,0,0.3);margin-left:15px;margin-top:10px;
+  border-radius:3px;background-color:rgba(244,116,100,1);font-size:15px;color:white;}
+textarea{width:94%;height:200px;text-shadow:red;background-color:white;border:1px solid rgba(0,0,0,0.3);
+  margin-left:15px;color:red;font-size:20px;border-radius:3px;}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	    *{margin:auto;color:red;font-size:25px;font-family:sans-serif;text-align:center;}
+	    body{background-image:url(../images/wall.jpg);background-size:cover;background:blur(3px) no-repeat;}
+		.main{height:300px;width:500px;border:0px;border-radius:8px;background-color:rgba(255,255,255,0.1);position:absolute;left:0;right:0;top:100px;color:rgba(0,0,0,0.8);}
+		.content{background-color:rgba(255,255,255,0);height:auto;width:450px;margin-top:30px;color:blue;font-size:15px;}
+		.name{border:0px;border-radius:3px;background-color:rgba(0,0,0,1);margin-bottom:5px;height:30px;width:250px;color:white;font-size:15px;}
+		.password{border:0px;border-radius:3px;background-color:rgba(0,0,0,1);margin-bottom:5px;height:30px;width:250px;color:white;font-size:15px;}
+		.button{margin-top:20px;width:55px;border:0px;border-radius:5px;background-color:lightgreen;color:white;font-size:15px;height:30px;cursor:pointer;}
+		a{text-decoration:none;color:rgba(0,0,0,0.98);font-size:14px;font-weight:10px;}
+	</style>
+</head>
+<body>
+<div class="main">
+	Login Page
+	<div class="content"><form method="post" action="../Index.html">
+		<input type="text" class="name" size="12" placeholder="Id/UserName"><br/>
+		<input type="password" class="password" maxlength="15" size="12" placeholder="password"><br/>
+		<input type="button" onclick="f1()" class="button" value="login"><p onclick="f()">Forget password ?</p>
+	</div>
+</div>
+<script>
+function f() {
+    var txt;
+    var person = prompt("Please enter your email address:", "himanshujangra29@gmail.com");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+				alert(txt);
+    }
+		else {
+        location.replace("../Index.html");
+    }
+}
+function f1() {
+    var txt;
+    var person = document.getElementsByClassName("name")[0];
+		var person1 = document.getElementsByClassName("password")[0];
+		if(person.value=="")
+		{
+			window.alert("Enter name!!");
+			person.focus();
+			return false;
+		}
+		if(person1.value=="")
+		{
+			window.alert("Enter password!!");
+			person1.focus();
+			return false;
+		}
+		return location.replace("../Index.html");
+}
+</script>
+</body>
+</html>

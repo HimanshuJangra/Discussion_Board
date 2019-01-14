@@ -1,0 +1,18 @@
+/*https://www.template.net/cms-templates/wordpress-templates/question-answer-wp-theme/*/
+.main{width:70%;height:auto;background-color:rgba(243,243,243,1);float:left;clear:both;}
+body{background-color:rgba(243,243,243,1);}
+.que1{width:100%;height:auto;background-color:white;clear:both;}
+table{width:94%;margin-left:30px;font-size:16px;color:red;padding-bottom:30px;}
+.text1{float:right;clear:right;width:750px;height:35px;margin-top:20px;margin-bottom:20px;margin-right:20px;border-radius:4px;
+	border:1px solid rgba(0,0,0,0.3);color:black;
+	background-color:rgba(243,243,243,1);}
+.text2{float:right;margin-top:20px;margin-bottom:20px;margin-right:20px;height:80px;width:750px;border-radius:4px;
+	border:1px solid rgba(0,0,0,0.3);color:black;
+	background-color:rgba(243,243,243,1);}
+.a{width:15%;}
+td{width:85%;}
+.check1{}
+.but1{width:750px;float:right;height:40px;background-color:rgba(244,116,100,1);border:none;margin-right:20px;}
+.list1{width:752px;float:right;height:40px;color:black;background-color:rgba(243,343,243,1);margin-right:20px;
+border:1px solid rgba(0,0,0,0.3);border-radius:4px;}
+option{width:100%;background-color:white;}
